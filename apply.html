@@ -3,29 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Projects - Enactus MSU</title>
-    <meta name="description" content="Explore the innovative projects led by Enactus MSU, from community outreach with the NLF Foundation to ongoing initiatives like the Schneider Project.">
-    <meta name="keywords" content="Enactus MSU projects, Delta Corporation, NLF Outreach, Schneider Project, student projects, social entrepreneurship">
+    <title>Apply to Join - Enactus MSU</title>
+    <meta name="description" content="Apply to become a member of Enactus MSU and join a team of passionate student leaders dedicated to creating a positive impact through entrepreneurial action.">
+    <meta name="keywords" content="apply to Enactus, Enactus MSU membership, student leadership application, join Enactus">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://enactusmsu.ac.zw/projects.html">
-    <meta property="og:title" content="Our Projects - Enactus MSU">
-    <meta property="og:description" content="Discover the impactful projects at Enactus MSU, where students turn ideas into action.">
-    <meta property="og:image" content="https://enactusmsu.ac.zw/images/social-share-projects.jpg">
+    <meta property="og:url" content="https://enactusmsu.ac.zw/apply.html">
+    <meta property="og:title" content="Apply to Join - Enactus MSU">
+    <meta property="og:description" content="Ready to make a difference? Apply to join Enactus MSU and start your journey of impact and leadership.">
+    <meta property="og:image" content="https://enactusmsu.ac.zw/images/social-share-apply.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://enactusmsu.ac.zw/projects.html">
-    <meta property="twitter:title" content="Our Projects - Enactus MSU">
-    <meta property="twitter:description" content="Discover the impactful projects at Enactus MSU, where students turn ideas into action.">
-    <meta property="twitter:image" content="https://enactusmsu.ac.zw/images/social-share-projects.jpg">
+    <meta property="twitter:url" content="https://enactusmsu.ac.zw/apply.html">
+    <meta property="twitter:title" content="Apply to Join - Enactus MSU">
+    <meta property="twitter:description" content="Ready to make a difference? Apply to join Enactus MSU and start your journey of impact and leadership.">
+    <meta property="twitter:image" content="https://enactusmsu.ac.zw/images/social-share-apply.jpg">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-    <script src="script.js"></script>   
+    <script src="script.js"></script>
 </head>
 <body>
     <section class="header">
@@ -39,53 +39,18 @@
                     <li><a href="contact.html" title="Get in Touch">CONTACT</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()" title="Menu"></i>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
         <div class="text-box">
-            <h1>Our Projects</h1>
+            <h1>Join Our Team</h1>
         </div>
     </section>
 
-    <main class="projects-container">
-        <!-- Delta Corporation Campaign -->
-        <section class="project-card">
-            <div class="project-image-container">
-                <img src="images/delta1.jpg" alt="Delta Corporation Campaign Image 1" class="project-image">
-                <img src="images/delta2.jpg" alt="Delta Corporation Campaign Image 2" class="project-image">
-            </div>
-            <div class="project-content">
-                <h2 class="project-title">Delta Corporation Campaign</h2>
-                <p class="project-description">*User will supply description and impact*</p>
-            </div>
-        </section>
-
-        <!-- New Life Direction Foundation -->
-        <section class="project-card project-reverse">
-            <div class="project-image-container">
-                <img src="images/nlf.jpg" alt="New Life Direction Foundation Outreach" class="project-image">
-            </div>
-            <div class="project-content">
-                <h2 class="project-title">New Life Direction Foundation (NLF Outreach)</h2>
-                <p class="project-description">*User will supply summary and outcomes*</p>
-            </div>
-        </section>
-
-        <!-- Schneider Project -->
-        <section class="project-card">
-            <div class="project-image-container">
-                <img src="images/schneider.jpg" alt="Schneider Project" class="project-image">
-            </div>
-            <div class="project-content">
-                <h2 class="project-title">Schneider Project (Ongoing)</h2>
-                <p class="project-description">*User will supply brief explanation of goals*</p>
-            </div>
+    <main class="application-container">
+        <section id="join-application" class="application-section">
+            <!-- Application content will be dynamically displayed here -->
         </section>
     </main>
-
-    <section class="cta-join">
-        <h2>Ready to make a difference?</h2>
-        <a href="contact.html" class="cta-button">Join Us</a>
-    </section>
 
     <footer>
         <div class="footer-container">
@@ -115,6 +80,35 @@
             </div>
         </div>    
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const applicationSection = document.getElementById('join-application');
+            const today = new Date();
+            const currentMonth = today.getMonth(); // 0-11 (June is 5)
+            const currentDate = today.getDate();
+
+            // Application period: June 1 to June 22
+            const isApplicationOpen = currentMonth === 5 && currentDate >= 1 && currentDate <= 22;
+
+            if (isApplicationOpen) {
+                applicationSection.innerHTML = `
+                    <h2>Membership Application</h2>
+                    <p>Applications are open! Please fill out the form below to apply.</p>
+                    <!-- Embed your Google Form here -->
+                    <div class="google-form-placeholder">
+                        <p><strong>Note:</strong> Please replace this placeholder with your actual Google Form iframe embed code.</p>
+                        <iframe src="" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                    </div>
+                `;
+            } else {
+                applicationSection.innerHTML = `
+                    <h2>Applications Are Currently Closed</h2>
+                    <p>The application period for this cycle has ended. Please check back later or follow our social media for announcements about the next recruitment period.</p>
+                `;
+            }
+        });
+    </script>
 
 </body>
 </html>

@@ -3,7 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Enactus MSU</title>
+    <title>Contact Us - Enactus MSU</title>
+    <meta name="description" content="Get in touch with Enactus MSU. Whether you have a question, a project idea, or want to collaborate, we'd love to hear from you.">
+    <meta name="keywords" content="contact Enactus MSU, Enactus MSU email, collaborate with Enactus, student organization contact">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://enactusmsu.ac.zw/contact.html">
+    <meta property="og:title" content="Contact Us - Enactus MSU">
+    <meta property="og:description" content="Reach out to the Enactus MSU team. We are open to collaborations, partnerships, and new ideas.">
+    <meta property="og:image" content="https://enactusmsu.ac.zw/images/social-share-contact.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://enactusmsu.ac.zw/contact.html">
+    <meta property="twitter:title" content="Contact Us - Enactus MSU">
+    <meta property="twitter:description" content="Reach out to the Enactus MSU team. We are open to collaborations, partnerships, and new ideas.">
+    <meta property="twitter:image" content="https://enactusmsu.ac.zw/images/social-share-contact.jpg">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,10 +46,37 @@
         </div>
     </section>
 
-    <!-- Placeholder for contact content -->
-    <section class="placeholder-content">
-        <h2>Contact form will go here.</h2>
-    </section>
+    <main class="contact-container">
+        <section class="contact-content">
+            <div class="contact-form-container">
+                <h2>Get in Touch</h2>
+                <p>Have a question or want to collaborate? Fill out the form below, and we'll get back to you soon.</p>
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                    
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+            <aside class="contact-details">
+                <h3>Contact Information</h3>
+                <p><strong>Email:</strong> <a href="mailto:enactus@msu.ac.zw">enactus@msu.ac.zw</a></p>
+                <p>Connect with us on social media:</p>
+                <div class="social-icons-contact">
+                    <a href="https://www.facebook.com/enactusmsu" target="_blank" rel="noopener" title="Facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/enactusmsu" target="_blank" rel="noopener" title="Instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="https://twitter.com/enactusmsu" target="_blank" rel="noopener" title="Twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/enactusmsu" target="_blank" rel="noopener" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </aside>
+        </section>
+    </main>
 
     <footer>
         <div class="footer-container">

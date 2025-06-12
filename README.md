@@ -27,7 +27,7 @@ A modern, responsive website for Enactus Midlands State University, built with H
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/Enactus-MSU-Website.git
+   git clone https://github.com/emugonix/Enactus-MSU-Website.git
    ```
 
 2. Open the project in your preferred code editor
