@@ -61,7 +61,7 @@
 
 - [ ] **Replace Placeholders:**
   - Update the Formspree link in `contact.html` with your actual form ID.
-  - Embed the final Google Form in `apply.html`.
+  - [x] Embed the final Google Form in `apply.html`. (2025-07-01)
   - Fill in the project descriptions in `projects.html`.
 - [ ] **Content Review:**
   - Confirm all project impact statistics with the Enactus committee.
