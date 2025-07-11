@@ -89,17 +89,21 @@
             const currentDate = today.getDate();
 
             // Application period: June 1 to June 22
-            const isApplicationOpen = currentMonth === 5 && currentDate >= 1 && currentDate <= 22;
+            const isApplicationOpen = currentMonth === 6 && currentDate >= 1 && currentDate <= 22;
 
             if (isApplicationOpen) {
                 applicationSection.innerHTML = `
                     <h2>Membership Application</h2>
                     <p>Applications are open! Please fill out the form below to apply.</p>
-                    <!-- Embed your Google Form here -->
-                    <div class="google-form-placeholder">
-                        <p><strong>Note:</strong> Please replace this placeholder with your actual Google Form iframe embed code.</p>
-                        <iframe src="" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-                    </div>
+                    <iframe 
+                        src="https://forms.gle/qvncaAWFF7KKApWb8" 
+                        width="100%" 
+                        height="1200" 
+                        frameborder="0" 
+                        marginheight="0" 
+                        marginwidth="0">
+                        Loading…
+                    </iframe>
                 `;
             } else {
                 applicationSection.innerHTML = `
